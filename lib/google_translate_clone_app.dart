@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import "package:get/get.dart";
 import "config/routes.dart";
 import "config/themes.dart";
+import "features/home/home_view.dart";
 
 class GoogleTranslateCloneApp extends StatelessWidget {
   const GoogleTranslateCloneApp({super.key});
@@ -11,7 +12,7 @@ class GoogleTranslateCloneApp extends StatelessWidget {
         theme: AppThemes().lightTheme,
         darkTheme: AppThemes().darkTheme,
         getPages: AppRoutes().routes,
-        initialRoute: "/",
+        initialRoute: HomeView.route,
         debugShowCheckedModeBanner: false,
       );
 }
